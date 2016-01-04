@@ -1,0 +1,21 @@
+{{!< default}}
+
+<h1 style="text-align: center;">文章</h1>
+<ol class="posts">
+  {{#foreach posts}}
+  <li>
+    <a href="{{url}}" title="link to {{{title}}}">
+		<h2>{{{title}}}</h2>
+		<p class="post description">{{excerpt}}&hellip;</p>
+	</a>
+	<div class="post meta">
+		<time datetime="{{date format="YYYY MM DD"}}">{{date format="YYYY MM DD"}}</time>
+		<span class="post tags">{{tags separator=" "}}</span>
+	</div>
+	<hr class="divider post" />
+  </li>
+  {{/foreach}}
+</ol>
+
+{{pagination}}
+
