@@ -4,7 +4,7 @@
 
   <article class="{{post_class}}">
     <header>
-	  <a id="back-button" class="btn small square" href="javascript:history.back()">« 返回</a>
+	  {{<a id="back-button" class="btn small square" href="javascript:history.back()">« 返回</a>}}
       <div class="post meta">
         <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
         <span class="post tags">{{tags prefix="in " separator=" "}}</span>
