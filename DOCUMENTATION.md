@@ -50,6 +50,7 @@ The code of the theme is divided in 3 main sections: static files (as HTML and i
 ├── package.json
 ├── partials # different partials view
 │   ├── aside.hbs
+│   ├── baidu-analytics.hbs
 │   ├── comments.hbs
 │   ├── footer.hbs
 │   ├── google-analytics.hbs

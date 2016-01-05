@@ -221,12 +221,12 @@ main {
 }
 
 .copyright {
+  text-align: right;
   display: block;
   margin-bottom: .7em;
 
   a {
     color: lighten($gray-dark, 5%);
-    text-decoration: underline;
 
     &:hover {
       color: $hover-color;
