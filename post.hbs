@@ -4,6 +4,7 @@
 
   <article class="{{post_class}}">
     <header>
+	  <a id="back-button" class="btn small square" href="javascript:history.back()">« 返回</a>
       <div class="post meta">
         <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
         <span class="post tags">{{tags prefix="in " separator=" "}}</span>
@@ -12,7 +13,7 @@
 
         <span class="post reading-time"> ~ <span></span> read.</span>
       </div>
-      <a alt="Tweet '{{title}}'" href="https://twitter.com/intent/tweet?text={{encode title}}{{encode ' »'}}&amp;hashtags={{tags separator="," autolink="false"}}&amp;url={{url absolute="true"}}">
+     <a alt="'{{title}}'" rel="me" href="{{url}}">
         {{#if image}}<img id="post-image" src={{image}} alt="{{{title}}}">{{/if}}
         <h1 class="icon-reverse icon-social-twitter-post" id="post-title">{{{title}}}</h1>
       </a>
